@@ -276,4 +276,47 @@
 
         </div>
       </div>
-    </section>    
+    </section>  
+    
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <p class="section-label reveal">Me contacter</p>
+        <h2 class="section-title reveal" id="contact-title">Travaillons ensemble</h2>
+        <div class="contact-wrapper reveal">
+          <div class="contact-intro">
+            <p>Je suis disponible immédiatement pour un poste d'Intégrateur Web. N'hésitez pas à me contacter par email ou via mes réseaux professionnels.</p>
+            <div class="contact-links">
+              <a href="https://github.com/emouns" target="_blank" rel="noopener noreferrer" class="contact-social">
+                <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+              </a>
+              <a href="https://www.linkedin.com/in/mounir-fendou-639ab1209/" target="_blank" rel="noopener noreferrer" class="contact-social">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i> LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Nom complet <span aria-hidden="true">*</span></label>
+              <input type="text" id="name" name="name" placeholder="Jean Dupont" required autocomplete="name" />
+              <span class="field-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse email <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" placeholder="jean@exemple.com" required autocomplete="email" />
+              <span class="field-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" placeholder="Bonjour Mounir, je souhaitais..." required></textarea>
+              <span class="field-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer le message</button>
+            <p class="form-success" id="formSuccess" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
