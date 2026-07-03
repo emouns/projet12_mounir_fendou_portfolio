@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <!-- SEO de base ,meta description apparaît dans les résultats Google -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio de Mounir Fendou, Intégrateur Web. Spécialisé en HTML, CSS, JavaScript et SEO. Disponible pour un premier poste." />
   <meta name="author" content="Mounir Fendou" />
 
-  <!-- Open Graph — partage LinkedIn / réseaux sociaux -->
+  <!-- Open Graph  partage LinkedIn / réseaux sociaux -->
   <meta property="og:title" content="Mounir Fendou — Intégrateur Web" />
   <meta property="og:description" content="Portfolio de Mounir Fendou, Intégrateur Web diplômé OpenClassrooms. Spécialisé en HTML, CSS, JavaScript et SEO." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://mounir-fendou.github.io/portfolio" />
   <meta property="og:locale" content="fr_FR" />
 
-  <!-- Favicon -->
+  <!-- Favicon Les initiales MF sur fond bleu-->
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%232563eb'/><text y='.9em' font-size='60' font-family='serif' font-weight='bold' fill='white' x='12'>MF</text></svg>" />
-
-  <title>Mounir Fendou — Intégrateur Web</title>
+  
+  <!-- preconnect : pré-établit la connexion aux serveurs Google Fonts avant le chargement ,Playfair Display pour les titres, Inter pour le corps -->
+  <title>Mounir Fendou — Intégrateur Web</title>               
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet" />
@@ -25,7 +27,7 @@
 </head>
 <body>
 
-  <!-- LOADER / SPLASH SCREEN -->
+  <!-- Loader / Splash screenApparaît 2 secondes au chargement, couvre tout l'écran via position:fixed + z-index:9999 (CSS).-->
   <div id="loader" aria-hidden="true">
     <div class="loader-inner">
       <span class="loader-initials">MF</span>
@@ -33,11 +35,11 @@
       <div class="loader-bar"><div class="loader-bar-fill"></div></div>
     </div>
   </div>
-
-  <!-- NAVIGATION -->
+<!-- Navigation sticky — reste visible au défilement aria-label nomme la zone pour les lecteurs d'écran, visible sur mobile via media query à 768px -->
   <nav role="navigation" aria-label="Navigation principale">
     <div class="container nav-inner">
       <a href="#accueil" class="nav-logo" aria-label="Retour à l'accueil">MF</a>
+<!-- aria-expanded annonce aux lecteurs d'écran si le menu est ouvert ou fermé et met à jour par JS les 3 traits du hamburger, dessinés en CSS -->
       <button class="nav-burger" id="burgerBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
         <span></span><span></span><span></span>
       </button>
@@ -51,10 +53,10 @@
       </ul>
     </div>
   </nav>
-
+<!-- c'est le contenu principal de la page ,il Permet aux lecteurs d'écran de sauter directement au contenu via un raccourci clavier -->
   <main id="main-content">
     
-    <!-- HERO — ACCUEIL -->
+    <!-- HERO — ACCUEIL c'est la section visible à l'ouverture, règle SEO  un seul H1 par page ici c'est celui-ci.-->
     <section id="accueil" aria-labelledby="hero-title">
       <div class="container">
         <span class="eyebrow reveal">Disponible pour un emploi</span>
@@ -109,9 +111,9 @@
         <p class="section-label reveal">Ce que je maîtrise</p>
         <h2 class="section-title reveal" id="competences-title">Compétences</h2>
         <div class="skills-grid">
-
           <div class="skill-card reveal">
-            <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>
+<!--l'icône est décorative ,le texte à côté suffit pour comprendre Sans ça ,le lecteur d'écran lirait le nom technique de l'icône-->            
+            <div class="skill-icon" aria-hidden="true"><i class="fa-solid fa-code"></i></div>  
             <h3>Intégration</h3>
             <p>Intégration de maquettes pixel-perfect, HTML sémantique, CSS avancé, Flexbox, Grid.</p>
             <div class="skill-tags">
@@ -188,6 +190,7 @@
       <div class="container">
         <p class="section-label reveal">Mon chemin</p>
         <h2 class="section-title reveal" id="parcours-title">Parcours</h2>
+ <!-- <ol> et pas <ul>  le parcours est une séquence chronologique ordonnée  -->       
         <ol class="timeline" role="list">
 
           <li class="timeline-item reveal">
@@ -228,7 +231,7 @@
         <p class="section-label reveal">Mes réalisations</p>
         <h2 class="section-title reveal" id="projets-title">Projets</h2>
         <div class="projects-grid">
-
+<!-- chaque fiche projet est un contenu autonome et complet, lisible indépendamment du reste de la page, C'est la bonne sémantique  pour ce type de contenu. -->
           <!-- Projet 1 : Booki -->
           <article class="project-card reveal">
             <div class="project-header">
@@ -334,8 +337,9 @@
               </a>
             </div>
           </div>
-
+<!-- novalidate  désactive la validation native du navigateur pour utiliser notre propre validation JS plus cohérente et accessible. -->
           <form class="contact-form" id="contactForm" novalidate>
+ <!-- label cliquable + annonce lecteur d'écran pour les erreurs annoncées automatiquement. -->              
             <div class="form-group">
               <label for="name">Nom complet <span aria-hidden="true">*</span></label>
               <input type="text" id="name" name="name" placeholder="Jean Dupont" required autocomplete="name" />
