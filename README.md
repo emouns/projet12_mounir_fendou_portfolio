@@ -2,7 +2,7 @@
 > Intégrateur Web | HTML · CSS · JavaScript
 
 ## Lien en ligne
-https://mounir-fendou.github.io/portfolio
+https://mounir-fendou-portfolio.netlify.app
 
 ## Stack
 - HTML5 sémantique
@@ -21,13 +21,14 @@ https://mounir-fendou.github.io/portfolio
 - Accessible : aria, focus-visible, prefers-reduced-motion
 - SEO : title, meta description, Open Graph
 
-## Structure
+
 
 ## Structure
 
 - index.html
 - css/style.css
 - js/main.js
+- assets/
 - README.md
 
 ## Projets présentés
