@@ -1,3 +1,0 @@
-Lien du site deployé sur netlify
-
-mounir-fendou-portfolio.netlify.app
