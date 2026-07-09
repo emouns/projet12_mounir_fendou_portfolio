@@ -842,7 +842,9 @@ footer p {
   section {
     padding: 4rem 0;
   }
-
+  .timeline {
+    padding-left: 2.5rem;
+  }
   /* Nav */
   .nav-burger {
     display: flex;
