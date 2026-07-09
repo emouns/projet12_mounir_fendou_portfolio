@@ -190,7 +190,7 @@ section {
 }
 
 /*Navigation sticky reste en haut lors du défilement, backdrop-filter effet verre dépoli sur le contenu derrière, -webkit-backdrop-filter est le préfixe obligatoire pour Safari et iPhone */
-*/ nav {
+nav {
   position: sticky;
   top: 0;
   z-index: 100;
@@ -223,7 +223,14 @@ section {
   display: flex;
   gap: 2rem;
 }
+.nav-links.open {
+  display: flex;
+}
 
+nav.menu-open {
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
 .nav-links a {
   color: var(--text-muted);
   font-size: 0.875rem;
@@ -608,11 +615,22 @@ section {
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0, 5rem;
+  padding: 2rem;
 }
-
+.project-tags i {
+  font-size: 2rem;
+}
 .project-body {
   padding: 1.25rem 2rem 2rem;
+}
+.project-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
 }
 
 .project-title {

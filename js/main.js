@@ -1,12 +1,12 @@
 /*  LOADER / SPLASH SCREEN on attend que TOUT soit chargé (images, CSS, polices) avant de démarrer le countdown de 2 secondes   */
-window.addEventListener('load', () => {
+
   const loader = document.getElementById('loader');
   // Attendre 2 secondes puis disparition en fondu doux
   setTimeout(() => {
   // C'est le CSS qui fait l'animation, pas JS, meilleure performance GPU  
     loader.classList.add('hidden');
   }, 2000);
-});
+
 
 
 /*  MENU HAMBURGER (MOBILE) * toggle : ajoute .open si absente, retire si présente, isOpen stocke l'état pour mettre à jour aria-expanded et le label du bouton en même temps */
@@ -69,7 +69,8 @@ const sectionObserver = new IntersectionObserver((entries) => {
     }
   });
 }, {
-  threshold: 0.4
+  threshold: 0,
+  rootMargin: '-45% 0px -45% 0px'
 });
 
 sections.forEach(section => sectionObserver.observe(section));
