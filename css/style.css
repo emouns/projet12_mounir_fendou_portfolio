@@ -75,6 +75,7 @@ ol {
 }
 section {
   padding: 5rem 0;
+  scroll-margin-top: 70px;
 }
 #apropos,
 #parcours,
@@ -179,6 +180,7 @@ section {
 
 section {
   padding: 5rem 0;
+  scroll-margin-top: 70px;
 }
 
 /* Alternating backgrounds */
