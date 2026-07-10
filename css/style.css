@@ -823,6 +823,11 @@ footer p {
 .back-to-top:hover {
   color: var(--accent);
 }
+.section-back-to-top {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2.5rem;
+}
 /* SCROLL REVEAL état initial invisible et décalé de 24px vers le bas, leJS ajoute .visible quand l'élément entre dans le viewport et transition opacity + translateY crée l'apparition depuis le bas. */
 .reveal {
   opacity: 0;
