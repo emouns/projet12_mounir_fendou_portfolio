@@ -634,6 +634,7 @@ nav.menu-open {
   height: 220px;
   object-fit: cover;
   display: block;
+  margin: 0 0.3rem;
 }
 .project-img--inset {
   width: calc(100% - 3rem);
