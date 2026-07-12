@@ -635,7 +635,10 @@ nav.menu-open {
   object-fit: cover;
   display: block;
 }
-
+.project-img--inset {
+  width: calc(100% - 3rem);
+  margin: 0 1.5rem;
+}
 .project-title {
   font-family: "Playfair Display", serif;
   font-weight: 700;
