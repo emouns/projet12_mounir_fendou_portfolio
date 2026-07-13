@@ -21,9 +21,12 @@ https://mounir-fendou-portfolio.netlify.app
 - Accessible : aria, focus-visible, prefers-reduced-motion
 - SEO : title, meta description, Open Graph
 
+## Méthode de développement
+Ce portfolio est codé à la main de A à Z (HTML/CSS/JS), 
+sans framework ni générateur de site.
 
 
-## Structure
+## Structure 
 
 - index.html
 - css/style.css
