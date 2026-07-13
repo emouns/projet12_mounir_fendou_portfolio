@@ -611,7 +611,7 @@ nav.menu-open {
   font-family: "Playfair Display", serif;
   font-weight: 800;
   font-size: 2.5rem;
-  color: var(--border);
+  color: var(--text-muted);
   line-height: 1;
 }
 
@@ -639,6 +639,7 @@ nav.menu-open {
 .project-img--inset {
   width: calc(100% - 3rem);
   margin: 0 1.5rem;
+  object-position: center top;
 }
 .project-title {
   font-family: "Playfair Display", serif;
